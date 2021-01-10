@@ -41,7 +41,7 @@
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
       ),
-      url(../../img/hero-mob.jpg);
+      url(./../img/hero-mob.jpg);
   }
 }
 @media screen and (min-width: 768px) {
@@ -50,7 +50,7 @@
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
       ),
-      url(../../img/hero-tab.jpg);
+      url(./../img/hero-tab.jpg);
   }
 }
 @media screen and (min-width: 1024px) {
@@ -60,7 +60,7 @@
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
       ),
-      url(../../img/hero.jpg);
+      url(./../img/hero.jpg);
   }
   .hero-header {
     @include font($primFont, normal, 900, 44px, 60px);
