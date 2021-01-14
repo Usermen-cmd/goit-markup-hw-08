@@ -208,6 +208,12 @@
     @include font($primFont, normal, 400, 12px, 14px);
   }
 }
+@media screen and (max-width: 1023px) {
+  .backdrop .modal {
+    overflow: scroll;
+    max-height: 100vh;
+  }
+}
 @media screen and (min-width: 1024px) {
   .backdrop .modal {
     width: 528px;
