@@ -31,6 +31,7 @@
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
+  overflow: auto;
 
   transform: translate(-50%, -50%) scale(1);
   transition: transform $transSet, opacity $transSet;
@@ -48,18 +49,19 @@
   width: 30px;
   height: 30px;
   border-radius: 50%;
-  background-position: center;
-  background-repeat: no-repeat;
   border: 1px solid rgba(0, 0, 0, 0.1);
   cursor: pointer;
   display: flex;
   align-items: center;
   justify-content: center;
   background-color: #ffffff;
-  transition: fill $transSet;
+  transition: all $transSet;
 }
 .modal .modal-btn:hover {
-  fill: $buttonAccentColor;
+  color: $buttonAccentColor;
+}
+.modal .modal-btn-icon {
+  fill: currentColor;
 }
 /* form in modal */
 .modal-title {
@@ -208,13 +210,12 @@
     @include font($primFont, normal, 400, 12px, 14px);
   }
 }
-@media screen and (max-width: 1023px) {
+@media screen and (max-width: 1199px) {
   .backdrop .modal {
-    overflow: scroll;
-    max-height: 100vh;
+    max-height: 90vh;
   }
 }
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1200px) {
   .backdrop .modal {
     width: 528px;
   }

@@ -42,8 +42,6 @@
 
   margin-bottom: 16px;
 }
-.team {
-}
 @media screen and (max-width: 767px) {
   .team-list-item:not(:last-child) {
     margin-bottom: 30px;
@@ -56,7 +54,7 @@
     flex-wrap: wrap;
   }
 }
-@media screen and (min-width: 768px) and (max-width: 1023px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .team-list-item {
     width: calc((100% - 30px) / 2);
   }
@@ -67,7 +65,7 @@
     margin-bottom: 30px;
   }
 }
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1200px) {
   .team-title {
     @include font($primFont, normal, 700, 36px, 42px);
   }
