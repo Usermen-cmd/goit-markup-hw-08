@@ -51,11 +51,14 @@
   &:hover,
   &:focus,
   &:active {
+    outline: none;
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
       1px 4px 6px rgba(0, 0, 0, 0.16);
   }
 }
-.portfolio-card:hover {
+.portfolio-card:hover,
+.portfolio-card:focus,
+.portfolio-card:active {
   .portfolio-list-overlay {
     transform: translateY(0);
   }
@@ -136,6 +139,9 @@
   }
 }
 @media screen and (min-width: 1200px) {
+  .portfolio {
+    padding: 94px 0;
+  }
   .portfolio-list {
     display: flex;
     align-items: flex-start;

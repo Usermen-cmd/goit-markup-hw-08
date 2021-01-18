@@ -58,6 +58,9 @@
   }
 }
 @media screen and (min-width: 1200px) {
+  .clients {
+    padding: 94px 0;
+  }
   .clients-title {
     margin-bottom: 50px;
     @include font($primFont, normal, 700, 36px, 42px);

@@ -69,13 +69,11 @@
   }
   .header {
     position: relative;
+    padding: 15px 0;
     .container {
       display: flex;
       align-items: center;
       justify-content: space-between;
-    }
-    .logo {
-      padding: 15px 0;
     }
   }
 
@@ -134,11 +132,12 @@
 // ================ tablet ================
 @media screen and (min-width: 768px) {
   .header {
+    padding: 26px 0;
     .container {
       display: flex;
+      align-items: center;
     }
     .logo {
-      padding: 26px 0;
       margin-right: 88px;
     }
   }
@@ -188,6 +187,12 @@
 }
 // ================ desktop ================
 @media screen and (min-width: 1200px) {
+  .header {
+    padding: 25px 0;
+    .logo {
+      margin-right: 93px;
+    }
+  }
   .addres-list {
     display: flex;
     justify-content: center;
