@@ -178,11 +178,15 @@
     }
   }
   .addres-list-link {
-    @include font($primFont, normal, 500, 12px, 14px);
+    @include font($primFont, normal, 500, 14px, 16px);
     justify-content: flex-start;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1199px) {
+  .addres-list-link {
+    @include font($primFont, normal, 500, 12px, 14px);
+    justify-content: flex-start;
+  }
   .addres-list-item:not(:last-child) {
     margin-bottom: 10px;
   }
