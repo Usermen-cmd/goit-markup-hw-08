@@ -119,9 +119,11 @@
     border: none;
     color: $secTextColor;
     background-color: #ffffff;
-    outline: none;
+    // outline: none;
     transition: $transSet;
-    &:hover {
+    &:hover,
+    &:focus,
+    &:active {
       color: $accentColor;
     }
   }
@@ -132,7 +134,7 @@
 // ================ tablet ================
 @media screen and (min-width: 768px) {
   .header {
-    padding: 26px 0;
+    padding: 21px 0;
     .container {
       display: flex;
       align-items: center;
@@ -171,24 +173,35 @@
       height: 4px;
       background-color: $accentColor;
       border-radius: 2px;
-      bottom: 0;
+      bottom: 1px;
       left: 0;
     }
   }
   .addres-list-link {
-    @include font($primFont, normal, 500, 14px, 16px);
+    @include font($primFont, normal, 500, 12px, 14px);
     justify-content: flex-start;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .addres-list-item:not(:last-child) {
-    margin-bottom: 16px;
+    margin-bottom: 10px;
+  }
+  .addres-icon[width='10'] {
+    width: 10px;
+    height: 14px;
+  }
+  .addres-icon[width='16'] {
+    width: 14px;
+    height: 10px;
+  }
+  .addres-icon {
+    margin-right: 8px;
   }
 }
 // ================ desktop ================
 @media screen and (min-width: 1200px) {
   .header {
-    padding: 25px 0;
+    padding: 26px 0;
     .logo {
       margin-right: 93px;
     }
