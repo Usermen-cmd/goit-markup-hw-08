@@ -1100,6 +1100,7 @@ p {
 
 @media screen and (max-width: 767px) {
   .backdrop .modal {
+    width: 100%;
     max-width: 450px;
   }
 
